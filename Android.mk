@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter courbet davinci phoenix surya sweet sweet2 toco violet,$(TARGET_DEVICE)),)
+ifneq ($(filter courbet davinci phoenix surya sweet sweet_k6a toco violet,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
