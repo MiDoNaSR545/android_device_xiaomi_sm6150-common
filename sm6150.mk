@@ -31,6 +31,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
+# Miui-Camera
+$(call inherit-product-if-exists, vendor/xiaomi/sweet2-miuicamera/sweet2-miuicamera-vendor.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
