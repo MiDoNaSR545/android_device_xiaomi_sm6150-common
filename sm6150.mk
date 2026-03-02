@@ -33,6 +33,7 @@ $(call inherit-product, hardware/dolby/dolby.mk)
 
 # Miui-Camera
 $(call inherit-product-if-exists, vendor/xiaomi/sweet2-miuicamera/sweet2-miuicamera-vendor.mk)
+$(call inherit-product-if-exists, device/xiaomi/camera/miuicamera.mk)
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
